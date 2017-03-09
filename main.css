@@ -13,17 +13,22 @@ body {
 	margin: 0 auto;
 }
 
+form {
+	overflow: hidden;
+}
+
 label {
 	margin-bottom: 15px;
 	display: block;
-	font-size: 15px;
+	font-size: 13px;
 	text-transform: capitalize;
+	width: 50%;
+	float: left;
+	color: gray;
 }
 
 input {
-	width: 100%;
+	width: 95%;
 	padding: 6px 8px;
 	border: 1px solid #b6b6b6;
-	border-radius: 2px;
-	margin-top: 4px;
 }
