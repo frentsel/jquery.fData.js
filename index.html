@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>jquery.fData.js</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div id="main">
+	<h1>jquery.fData.js - Plugin</h1>
+	<hr>
+	<br>
+	<form>
+		<label>firstName:
+			<input type="text" name="firstName" placeholder="firstName">
+		</label>
+		<label>lastName:
+			<input type="text" name="lastName" placeholder="lastName">
+		</label>
+		<label>email:
+			<input type="email" name="email" placeholder="email">
+		</label>
+		<label>tel:
+			<input type="tel" name="tel" placeholder="tel">
+		</label>
+
+	</form>
+</div>
+
+
+<script src="./jquery-3.1.1.min.js"></script>
+<script src="./jquery.fData.js" defer></script>
+<script>
+	// Example
+	var form = $('form');
+
+	// Return json object of form
+	console.log(form.fData());
+
+	// Fill form
+	form.fData({
+		userName: 'Sanya',
+		email: 'sanya@gmail.com',
+		age: 32
+	})
+</script>
+</body>
+</html>

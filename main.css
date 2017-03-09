@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 14px/20px 'Raleway';
+	font-weight: 500;
+	color: #333;
+}
+
+#main {
+	width: 400px;
+	margin: 0 auto;
+}
+
+label {
+	margin-bottom: 15px;
+	display: block;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+input {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid #b6b6b6;
+	border-radius: 2px;
+	margin-top: 4px;
+}
