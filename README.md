@@ -1,46 +1,27 @@
 # Observer JS
 
-The tiny js library for manage of events. 
-You also can pass some data into event. 
-Each different event can have a multiple handlers. 
+The tiny jQuery plugin for work with form like with usual object.
 
 #[Demo](https://frentsel.github.io/jquery.fData.js/index.html)
 
 *Example for use*
 
 ```javascript
-
-// Example
-var form = $('form');
-
-// Return json object of form
-console.log(form.fData());
-
-// Fill form
-form.fData({
-  userName: 'Sanya',
-  email: 'sanya@gmail.com',
-  age: 32
-})
-```
-
-```javascript
-
-// Example
-var form = $('form');
-
-// Return json object of form
-console.log(form.fData());
+// Get Form Data
+$('form').fData();
+// return
+/*{
+    "firstName": "Vasya56745657 547",
+    "lastName": "Pupkin547",
+    "email": "vasya-pupkin@mail.ru",
+    "tel": "+7012345678"
+}/*
 
 // Fill form
-form.fData({
-  userName: 'Sanya',
-  email: 'sanya@gmail.com',
-  age: 32
-})
-```
-
-Result in console
-```javascript
-Action: secondHandler, data:  1485090689879
+$('form').fData({
+    "firstName": "Vasya",
+    "lastName": "Pupkin",
+    "email": "vasya-pupkin@mail.ru",
+    "tel": "+7012345678"
+});
 ```
