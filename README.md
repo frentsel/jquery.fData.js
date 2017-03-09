@@ -1,4 +1,4 @@
-# Observer JS
+# jquery.fData.js
 
 The tiny jQuery plugin for work with form like with usual object.
 
