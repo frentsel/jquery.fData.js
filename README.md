@@ -11,8 +11,8 @@ The tiny jQuery plugin for work with form like with usual object.
 $('form').fData();
 // return
 {
-    "firstName": "Vasya56745657 547",
-    "lastName": "Pupkin547",
+	"firstName": "Vasya",
+    "lastName": "Pupkin",
     "email": "vasya-pupkin@mail.ru",
     "tel": "+7012345678"
 }
