@@ -1,17 +1,17 @@
-$.fn.fData = function (_data) {
+$.fn.fData = function (data) {
 
 	var $form = this;
 
-	if (!_data) {
-		return $form.serializeArray().reduce(function (obj, field) {
+	if (!data) {
+		return $form.serializeArray().reduce((obj, field) => {
 			obj[field.name] = field.value;
 			return obj;
 		}, {});
 	}
 
-	$.each(_data, function (key, val) {
+	$.each(data, (key, val) => {
 		$form[0][key].value = val;
 	});
 
-	return _data;
+	return data;
 };
